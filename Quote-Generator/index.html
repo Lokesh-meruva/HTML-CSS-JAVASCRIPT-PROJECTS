@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quote Generator</title>
+
+  <!-- Inline SVG Favicon: Speech bubble with quotation mark -->
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <rect width="64" height="64" rx="12" fill="#f9f9f9" />
+    <path d="M16 20h32v20H26l-10 10V20z" fill="#4a90e2"/>
+    <text x="24" y="38" font-size="24" fill="white" font-family="Arial, sans-serif">“</text>
+  </svg>'>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Random Quote Generator</h1>
+    <div class="quote-box" id="quoteBox">
+      <p id="quoteText">Click "New Quote" to get inspired!</p>
+      <span id="quoteAuthor">-</span>
+    </div>
+
+    <div class="buttons">
+      <button onclick="generateQuote()">New Quote</button>
+      <button onclick="copyQuote()">Copy</button>
+      <button onclick="tweetQuote()">Tweet</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

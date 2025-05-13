@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+
+    <!-- Inline SVG Favicon: Dollar sign in a circle -->
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30" fill="#ffffff" stroke="#2ecc71" stroke-width="4"/>
+      <text x="32" y="42" font-size="32" text-anchor="middle" fill="#2ecc71" font-family="Arial">$</text>
+    </svg>'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <h2>Loan Calculator</h2>
+
+            <div class="input-group">
+                <label>Loan Amount</label>
+                <input type="number" id="loanAmountInput" placeholder="Enter Loan Amount">
+            </div>
+
+            <div class="input-group">
+                <label>Interest Rate (%)</label>
+                <input type="number" id="interestRateInput" placeholder="Enter Interest Rate">
+            </div>
+
+            <div class="input-group">
+                <label>Loan Term (In Months)</label>
+                <input type="number" id="loanTermInput" placeholder="Enter Loan Term">
+            </div>
+
+            <button id="calculateBtn">Calculate</button>
+            <div id="result">Final Result</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
